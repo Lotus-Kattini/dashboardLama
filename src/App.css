@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+.Himg{
+    filter: drop-shadow(2px 2px 40px #ffffff51);
+    width: 33rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.animation{
+    position: absolute;
+    z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.custom-content{
+    background-color: #0009;
+    border-radius: 2rem;
+    margin-top: 5.5rem;
+    padding: 1rem;
+}
+
+.btn{
+    /* background-color: white; */
+    outline: none;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: rgb(60, 110, 202);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.detailsBtn{
+    color: rgb(60, 110, 202);
+}
+
+@media screen and (max-width:998px){
+    .Himg{
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width:896px){
+    .custom-flex{
+        flex-direction: column;
+        row-gap: 5rem;
+    }
+    .animation{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width:563px){
+    .custom-content{
+     width: 80%;   
+    }
+    .Himg{
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width:397px){
+    .Himg{
+        width: 15rem;
+    }
+}
+
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  body {
+    font-family: 'Lato', sans-serif !important;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .container{
+    margin: 0 auto;
   }
-}
+  
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .h-100{
+    height: 100vh;
+  }
+  
+  .row .col-12{
+    width: 100%;
+  }
+  
+  .row .col-6{
+    width: 50%;
+  }
+
+
+@media (max-width: 450px) {
+    .ag-theme-alpine .ag-paging-panel {
+      
+      font-size: 10px; 
+    }
+  
+    .ag-theme-alpine .ag-paging-button,
+    .ag-theme-alpine .ag-paging-panel .ag-paging-description {
+      margin: 0; 
+    }
+  
+    .ag-theme-alpine .ag-paging-panel .ag-paging-description {
+      text-align: center; 
+    }
+  }
+  
+  

@@ -1,0 +1,147 @@
+.dashboard{
+    min-height: 100vh;
+    background-color: #f7f8fa;
+}
+
+
+.custom-img{
+    position: relative;
+}
+
+.custom-btn{
+    position: absolute;
+    padding:0 0.4rem;
+    background-color: red;
+    padding: 0.2rem 0.5rem;
+    color: #fff;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.custom-bg-btn{
+  background-color: rgb(60, 110, 202) !important;
+  color: #fff;
+}
+.custom-bg-btn:hover{
+  color: #fff;
+}
+
+
+
+.table-shadow {
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+
+ 
+ 
+  table th {
+    background-color: #362f4b !important ;
+    padding: 5px 0 5px 20px !important;
+    color:#fff !important;
+    
+  }
+  table tr td {
+    padding: 15px 20px !important;
+  }
+  table tr{
+    border-bottom: 0.1px solid gray;
+  }
+
+
+
+.grid-container {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.search-bar button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.custom-btn-add{
+    background-color: #007bff;
+    border: 0;
+    padding: 8px 10px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.grid {
+  height: 400px;
+  width: 80%;
+}
+
+.ag-ltr .ag-cell{
+  display: flex;
+  align-items: center;
+}
+
+.actions-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ag-theme-alpine .ag-header-cell, .ag-theme-alpine .ag-cell {
+  width: 250px;
+}
+
+.ag-root-wrapper.ag-layout-normal{
+  width: 95%;
+}
+
+.dashboard-container {
+  padding: 2rem;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin: 1.2rem 2rem;
+}
+
+@media (max-width:780px){
+  .dashboard-cards{
+    grid-template-columns: repeat(2,1fr);
+
+  }
+}
+
+@media (max-width:580px){
+  .dashboard-cards{
+    grid-template-columns: repeat(1,1fr);
+
+  }
+}
